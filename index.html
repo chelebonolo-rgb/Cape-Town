@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+ <button id="color-btn">Change Background Color</button>
+
+  <meta charset="UTF-8">
+  <title>Welcome to Cape Town!</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Dynamic Welcome Message -->
+<div id="welcomeMessage"></div>
+<div class="slideshow">
+  <img src="c:\Users\Game\OneDrive\Documentos\assignment 1\Arts-Culture-menu.jpg" class="slide" style="display:block;">
+  <img src="c:\Users\Game\OneDrive\Documentos\assignment 1\Drumstruck_CH_146-600x480.jpeg" class="slide" style="display:none;">
+  <img src="c:\Users\Game\OneDrive\Documentos\assignment 1\OIP (3).webp" class="slide" style="display:none;">
+  
+  <button id="prev">Prev</button>
+  <button id="next">Next</button>
+</div>
+
+
+<script>
+  const now = new Date();
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+  document.getElementById("welcomeMessage").innerText = `Welcome! Today is ${now.toLocaleDateString('en-US', options)}`;
+</script>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Welcome to Cape Town!</h1>
+  </header>
+
+  <section class="intro">
+    <p>Cape Town is a vibrant city nestled between mountains and sea. Known for its stunning landscapes and rich history, it's a destination that captivates every traveler. From the colorful houses of Bo-Kaap to the majestic Table Mountain, Cape Town offers endless adventures. The city’s diverse culture, delicious cuisine, and warm hospitality make it unforgettable. Whether you're hiking, surfing, or exploring museums, there's something for everyone.</p>
+    <p class="quote">*"Cape Town is not just a place, it's a feeling."*</p>
+  </section>
+
+  <div class="hero">
+    <img src="c:\Users\Game\OneDrive\Documentos\assignment 1\R.jpeg" alt="Cape Town Skyline">
+    <div class="caption">Explore the heart of South Africa</div>
+  </div>
+  <footer class="site-footer">
+    <p>&copy;2025 Explore Cape Town with Kamohelo Chele</p>
+  </footer>
+  <script src="script.js"></script>
+<button id="color-btn">Change Background Color</button>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+</body>
+</html>
